@@ -1,5 +1,6 @@
 # Build outputs
 neuro_llama
+neuro_llama_gui
 *.o
 *.obj
 *.so
