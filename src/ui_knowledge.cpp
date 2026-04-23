@@ -7,13 +7,35 @@
 
 namespace neuro {
 
-void render_knowledge_panel(AppController & app, const EngineState & state, GuiState & gui) {
-    ImGui::Begin("Knowledge");
+namespace {
 
+void render_section_caption(const char * label, const char * hint = nullptr) {
+    ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.82f, 0.88f, 0.95f, 1.0f));
+    ImGui::TextUnformatted(label);
+    ImGui::PopStyleColor();
+    if (hint != nullptr && hint[0] != '\0') {
+        ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.58f, 0.66f, 0.76f, 1.0f));
+        ImGui::TextWrapped("%s", hint);
+        ImGui::PopStyleColor();
+    }
+    ImGui::Separator();
+}
+
+} // namespace
+
+bool render_knowledge_panel(AppController & app, const EngineState & state, GuiState & gui, bool busy) {
+    ImGui::Begin("Knowledge Base", nullptr);
+    if (ImGui::IsWindowCollapsed()) {
+        ImGui::End();
+        return true;
+    }
+    render_section_caption("Capture Entry", "Manually ingest source notes and structured context.");
+
+    ImGui::BeginDisabled(busy);
     ImGui::InputText("Title", &gui.knowledge_title);
     ImGui::InputText("URL", &gui.knowledge_url);
-    ImGui::InputTextMultiline("Summary", &gui.knowledge_summary, ImVec2(-FLT_MIN, 70.0f));
-    ImGui::InputTextMultiline("Text", &gui.knowledge_text, ImVec2(-FLT_MIN, 70.0f));
+    ImGui::InputTextMultiline("Summary", &gui.knowledge_summary, ImVec2(-FLT_MIN, 54.0f));
+    ImGui::InputTextMultiline("Text", &gui.knowledge_text, ImVec2(-FLT_MIN, 54.0f));
     if (ImGui::Button("Add Entry")) {
         try {
             KnowledgeEntry entry;
@@ -33,9 +55,16 @@ void render_knowledge_panel(AppController & app, const EngineState & state, GuiS
             gui.error_message = e.what();
         }
     }
+    ImGui::EndDisabled();
 
     ImGui::Separator();
-    if (ImGui::BeginTable("knowledge_table", 4, ImGuiTableFlags_Borders | ImGuiTableFlags_RowBg | ImGuiTableFlags_ScrollY, ImVec2(0.0f, 260.0f))) {
+    if (busy) {
+        ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.95f, 0.78f, 0.38f, 1.0f));
+        ImGui::TextWrapped("Knowledge entry capture is locked while an inference step is running.");
+        ImGui::PopStyleColor();
+    }
+    render_section_caption("Indexed Entries", "Current retrieval corpus and ranking data.");
+    if (ImGui::BeginTable("knowledge_table", 4, ImGuiTableFlags_Borders | ImGuiTableFlags_RowBg | ImGuiTableFlags_ScrollY | ImGuiTableFlags_Resizable, ImVec2(0.0f, 220.0f))) {
         ImGui::TableSetupColumn("Title");
         ImGui::TableSetupColumn("Mode");
         ImGui::TableSetupColumn("Score");
@@ -55,6 +84,7 @@ void render_knowledge_panel(AppController & app, const EngineState & state, GuiS
         ImGui::EndTable();
     }
     ImGui::End();
+    return false;
 }
 
 } // namespace neuro

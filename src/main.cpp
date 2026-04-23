@@ -15,6 +15,7 @@ using neuro::EngineState;
 using neuro::KnowledgeEntry;
 using neuro::KnowledgeNodeRun;
 using neuro::LlmDecision;
+using neuro::RuntimeSelfTestResult;
 using neuro::SectionNode;
 
 void print_usage(const char * argv0) {
@@ -22,6 +23,7 @@ void print_usage(const char * argv0) {
         << "Usage: " << argv0 << " -m /path/to/model.gguf [--topic \"topic\"] [--n-predict 192] [--n-ctx 2048] [--ngl 99]\n"
         << "       [--state-file neuro_state.bin] [--knowledge-node-process] [--knowledge-node-modes all|mode,mode]\n"
         << "       [--no-post-knowledge-node-process]\n"
+        << "       [--test-mode] [--test-iterations N] [--test-event \"prompt\"]\n"
         << "\n"
         << "Interactive commands:\n"
         << "  /step <text>   add an event and run one LLM iteration\n"
@@ -33,8 +35,16 @@ void print_usage(const char * argv0) {
         << "  /quit          exit\n";
 }
 
-AppConfig parse_args(int argc, char ** argv) {
-    AppConfig args;
+struct LaunchOptions {
+    AppConfig config;
+    bool test_mode = false;
+    int test_iterations = 1;
+    std::string test_event = "Produce a short grounded runtime self-test confirmation.";
+};
+
+LaunchOptions parse_args(int argc, char ** argv) {
+    LaunchOptions launch;
+    AppConfig & args = launch.config;
     for (int i = 1; i < argc; ++i) {
         const std::string a = argv[i];
         auto need_value = [&](const std::string & flag) -> std::string {
@@ -61,6 +71,12 @@ AppConfig parse_args(int argc, char ** argv) {
             args.post_knowledge_node_process = false;
         } else if (a == "--knowledge-node-modes") {
             args.knowledge_node_modes = need_value(a);
+        } else if (a == "--test-mode") {
+            launch.test_mode = true;
+        } else if (a == "--test-iterations") {
+            launch.test_iterations = std::max(1, std::stoi(need_value(a)));
+        } else if (a == "--test-event") {
+            launch.test_event = need_value(a);
         } else if (a == "-h" || a == "--help") {
             print_usage(argv[0]);
             std::exit(0);
@@ -71,7 +87,7 @@ AppConfig parse_args(int argc, char ** argv) {
     if (args.model_path.empty()) {
         throw std::runtime_error("model path is required");
     }
-    return args;
+    return launch;
 }
 
 std::string trim(const std::string & s) {
@@ -103,11 +119,45 @@ void print_state(const EngineState & s) {
     std::cout << "--------------------\n\n";
 }
 
+int run_test_mode(const LaunchOptions & launch) {
+    neuro::AppController app(launch.config);
+    const RuntimeSelfTestResult result = app.run_self_test(launch.test_event, launch.test_iterations);
+    std::cout << "Runtime self-test\n";
+    std::cout << "status: " << (result.passed ? (result.degraded ? "DEGRADED" : "PASS") : "FAIL") << "\n";
+    std::cout << "iterations: " << result.iterations_completed << "/" << result.iterations_requested << "\n";
+    if (!result.json_probe_variant.empty()) {
+        std::cout << "json probe variant: " << result.json_probe_variant << "\n";
+    }
+    std::cout << "json probe total ms: " << result.json_probe_metrics.total_ms << "\n";
+    std::cout << "plan total ms: " << result.plan_metrics.total_ms << "\n";
+    std::cout << "write total ms: " << result.write_metrics.total_ms << "\n";
+    for (const auto & check : result.checks) {
+        std::cout << (check.passed ? "[PASS] " : "[FAIL] ") << check.name << ": " << check.detail << "\n";
+    }
+    if (!result.last_decision.update_title.empty()) {
+        std::cout << "last decision title: " << result.last_decision.update_title << "\n";
+    }
+    if (!result.last_decision.update_text.empty()) {
+        std::cout << "last decision text: " << result.last_decision.update_text << "\n";
+    }
+    if (!result.passed) {
+        return 1;
+    }
+    if (result.degraded) {
+        return 2;
+    }
+    return 0;
+}
+
 } // namespace
 
 int main(int argc, char ** argv) {
     try {
-        AppConfig config = parse_args(argc, argv);
+        LaunchOptions launch = parse_args(argc, argv);
+        if (launch.test_mode) {
+            return run_test_mode(launch);
+        }
+        AppConfig config = launch.config;
         neuro::AppController app(config);
         app.load_state();
         if (auto run = app.maybe_process_initial_knowledge()) {

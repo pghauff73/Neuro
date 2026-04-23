@@ -25,31 +25,42 @@ make
 ## Run
 
 ```sh
-./neuro_llama -m ./LFM2.5-350M-Q4_0.gguf --topic "Your topic"
+./neuro_llama_gui -m ./qwen2.5-1.5b-instruct-q4_k_m.gguf --topic "Your topic"
 ```
+
+Known local model targets:
+- `qwen2.5-1.5b-instruct-q4_k_m.gguf`
+- `LFM2.5-350M-Q4_0.gguf`
+- `tinyllama-1.1b-chat-v0.3.Q2_K.gguf`
 
 The runtime loads `neuro_state.bin` on startup when it exists and writes the
 current in-memory state back to that binary file on exit. Use `--state-file` to
 choose another path:
 
 ```sh
-./neuro_llama -m ./LFM2.5-350M-Q4_0.gguf --state-file ./my-session.bin
+./neuro_llama_gui -m ./qwen2.5-1.5b-instruct-q4_k_m.gguf --state-file ./my-session.bin
 ```
 
-Interactive commands:
+The ImGui application exposes session save/load, markdown export, chemistry
+ticks, async LLM steps, knowledge entry management, graph inspection, and
+diagnostics panels. Full runtime persistence uses the binary state file.
 
-```text
-/step <text>                         add an event and run one LLM iteration
-/tick <secs>                         advance chemistry without an LLM call
-/knowledge-add <title>|<url>|<text>  add an in-memory knowledge entry
-/knowledge [modes]                   process in-memory KnowledgeNode modes
-/show                                print current engine state
-/save                                write body-of-work.md
-/quit                                exit
+## Self-Test Mode
+
+Run a headless runtime self-test without opening the GUI:
+
+```sh
+./neuro_llama_gui -m ./qwen2.5-1.5b-instruct-q4_k_m.gguf --test-mode
 ```
 
-Knowledge entries are intentionally in-memory only. `/save` exports the current
-body graph as Markdown; it does not write JSON state. Full runtime persistence
-uses the binary state file.
-# Neuro
-# Neuro
+Optional controls:
+
+```sh
+./neuro_llama_gui -m ./qwen2.5-1.5b-instruct-q4_k_m.gguf --test-mode --test-iterations 2 --test-event "Produce a short grounded confirmation."
+```
+
+The self-test checks:
+- direct JSON input/output against the LLM runtime
+- end-to-end plan/write stage operation
+- stage timing against the current runtime tuning budget
+- decision quality signals such as confidence and insufficient-context flags

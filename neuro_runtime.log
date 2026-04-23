@@ -1,0 +1,380 @@
+[20260423-075754] INFO runtime log initialized file=neuro_runtime.log
+[20260423-075754] INFO state loaded from neuro_state.bin
+[20260423-075754] INFO knowledge context rebuilt after load
+[20260423-075754] INFO initial knowledge processing requested
+[20260423-075754] WARN knowledge processing skipped with no entries
+[20260423-075804] INFO run_step invoked event=Continue developing the topic.
+[20260423-075804] INFO step start iteration=2 mode=action state=ACh event=Continue developing the topic.
+[20260423-075804] INFO step context prepared recent_events=2 evidence_entries=0 packet_bytes=827
+[20260423-080009] INFO model response received raw_bytes=2 clean_bytes=2
+[20260423-080009] ERROR step rejected iteration=2 reason=fallback: invalid JSON response | raw="]
+[20260423-080204] INFO state saved to neuro_state.bin
+[20260423-080204] INFO markdown exported with prefix body-of-work
+[20260423-080455] INFO runtime log initialized file=neuro_runtime.log
+[20260423-080456] INFO no prior state file at neuro_state.bin; starting fresh
+[20260423-080456] INFO knowledge context rebuilt after load
+[20260423-080456] INFO initial knowledge processing requested
+[20260423-080456] WARN knowledge processing skipped with no entries
+[20260423-080500] INFO run_step invoked event=Continue developing the topic.
+[20260423-080500] INFO step start iteration=1 mode=structure state=ACh event=Continue developing the topic.
+[20260423-080500] INFO step context prepared recent_events=1 evidence_entries=0
+[20260423-080651] INFO plan response received raw_bytes=53 clean_bytes=53 packet_bytes=757
+[20260423-080651] WARN plan rejected iteration=1 reason=fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"}
+[20260423-080651] WARN using local fallback plan iteration=1
+[20260423-080811] WARN write rejected iteration=1 reason=fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"} | fallback: missing or invalid update_title, update_text | raw={"rationale":"fallback: model retu...
+[20260423-080811] WARN low-confidence decision confidence=0.20 iteration=1
+[20260423-080811] WARN decision flagged insufficient_context iteration=1
+[20260423-080811] INFO node committed id=node-1-20260423-080811 reinforcement=0.005 chem=DA=0.68, 5HT=0.51, OXY=0.29, CORT=0.18, NE=0.79, GABA=0.70, ACh=0.95, END=0.27
+[20260423-080811] INFO step commit complete iteration=1 title=Next Section next_mode=structure next_state=ACh
+[20260423-080811] WARN knowledge processing skipped with no entries
+[20260423-080811] INFO post-step knowledge processing complete summary=No in-memory knowledge entries were available for KnowledgeNode processing.
+[20260423-080920] INFO state saved to neuro_state.bin
+[20260423-080920] INFO markdown exported with prefix body-of-work
+[20260423-085147] INFO runtime log initialized file=neuro_runtime.log
+[20260423-085147] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-085147] INFO state loaded from neuro_state.bin
+[20260423-085147] INFO knowledge context rebuilt after load
+[20260423-085147] INFO initial knowledge processing requested
+[20260423-085147] WARN knowledge processing skipped with no entries
+[20260423-085402] INFO state saved to neuro_state.bin
+[20260423-085402] INFO markdown exported with prefix body-of-work
+[20260423-085448] INFO runtime log initialized file=neuro_runtime.log
+[20260423-085448] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-085448] INFO state loaded from neuro_state.bin
+[20260423-085448] INFO knowledge context rebuilt after load
+[20260423-085448] INFO initial knowledge processing requested
+[20260423-085448] WARN knowledge processing skipped with no entries
+[20260423-085600] INFO state saved to neuro_state.bin
+[20260423-085600] INFO markdown exported with prefix body-of-work
+[20260423-085612] INFO runtime log initialized file=neuro_runtime.log
+[20260423-085612] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-085612] INFO state loaded from neuro_state.bin
+[20260423-085612] INFO knowledge context rebuilt after load
+[20260423-085612] INFO initial knowledge processing requested
+[20260423-085612] WARN knowledge processing skipped with no entries
+[20260423-085721] INFO state saved to neuro_state.bin
+[20260423-085721] INFO markdown exported with prefix body-of-work
+[20260423-085730] INFO runtime log initialized file=neuro_runtime.log
+[20260423-085730] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-085730] INFO state loaded from neuro_state.bin
+[20260423-085730] INFO knowledge context rebuilt after load
+[20260423-085730] INFO initial knowledge processing requested
+[20260423-085730] WARN knowledge processing skipped with no entries
+[20260423-085744] INFO state saved to neuro_state.bin
+[20260423-085744] INFO markdown exported with prefix body-of-work
+[20260423-090052] INFO runtime log initialized file=neuro_runtime.log
+[20260423-090052] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-090052] INFO state loaded from neuro_state.bin
+[20260423-090052] INFO knowledge context rebuilt after load
+[20260423-090052] INFO initial knowledge processing requested
+[20260423-090052] WARN knowledge processing skipped with no entries
+[20260423-090113] INFO state saved to neuro_state.bin
+[20260423-090113] INFO markdown exported with prefix body-of-work
+[20260423-090538] INFO runtime log initialized file=neuro_runtime.log
+[20260423-090538] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-090538] INFO state loaded from neuro_state.bin
+[20260423-090538] INFO knowledge context rebuilt after load
+[20260423-090538] INFO initial knowledge processing requested
+[20260423-090538] WARN knowledge processing skipped with no entries
+[20260423-091028] INFO state saved to neuro_state.bin
+[20260423-091028] INFO markdown exported with prefix body-of-work
+[20260423-091113] INFO runtime log initialized file=neuro_runtime.log
+[20260423-091113] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-091113] INFO state loaded from neuro_state.bin
+[20260423-091113] INFO knowledge context rebuilt after load
+[20260423-091113] INFO initial knowledge processing requested
+[20260423-091113] WARN knowledge processing skipped with no entries
+[20260423-091150] INFO run_step invoked event=Continue developing the topic.
+[20260423-091150] INFO step start iteration=2 mode=explore state=ACh event=Continue developing the topic.
+[20260423-091150] INFO step context prepared recent_events=2 evidence_entries=0
+[20260423-091150] INFO llm.plan.packet bytes=1130
+[20260423-091150] INFO llm.plan.packet BEGIN
+{"task":{"kind":"body_node_decision","goal":"choose the next grounded section update"},"state":{"topic":"Engineering Design Simulation with ProGen2d","iteration":2,"current_state":"ACh","next_state":"ACh","authoring_mode":"explore","chemistry":{"DA":0.809,"5HT":0.090,"OXY":0.094,"CORT":0.050,"NE":0.832,"GABA":0.000,"ACh":0.968,"END":0.245}},"focus":{"node_id":"node-1-20260423-080811","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Engineering Design Simulation with ProGen2d. Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"recent_events":["Continue developing the topic.","Continue developing the topic."],"evidence":[],"constraints":{"allow_citations":false,"valid_states":["DA","5HT","OXY","CORT","NE","GABA","ACh","END"],"valid_modes":["explore","structure","connect","stress_test","stabilize","action","activate"]},"operator_input":{"user_event":"Continue developing the topic."}}
+[20260423-091150] INFO llm.plan.packet END
+[20260423-091150] INFO llm.plan.prompt bytes=1602
+[20260423-091150] INFO llm.plan.prompt BEGIN
+Return exactly one compact JSON object. Required keys: current_state, authoring_mode, next_state, rationale. Optional keys: confidence, used_evidence_ids, insufficient_context, conflicts_detected. Confidence must be a number from 0 to 1. used_evidence_ids and conflicts_detected must be arrays of strings. Use only provided evidence ids. Do not invent citations or sources. If context is insufficient, set insufficient_context=true and keep the plan conservative.
+Packet: {"task":{"kind":"body_node_decision","goal":"choose the next grounded section update"},"state":{"topic":"Engineering Design Simulation with ProGen2d","iteration":2,"current_state":"ACh","next_state":"ACh","authoring_mode":"explore","chemistry":{"DA":0.809,"5HT":0.090,"OXY":0.094,"CORT":0.050,"NE":0.832,"GABA":0.000,"ACh":0.968,"END":0.245}},"focus":{"node_id":"node-1-20260423-080811","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Engineering Design Simulation with ProGen2d. Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"recent_events":["Continue developing the topic.","Continue developing the topic."],"evidence":[],"constraints":{"allow_citations":false,"valid_states":["DA","5HT","OXY","CORT","NE","GABA","ACh","END"],"valid_modes":["explore","structure","connect","stress_test","stabilize","action","activate"]},"operator_input":{"user_event":"Continue developing the topic."}}
+[20260423-091150] INFO llm.plan.prompt END
+[20260423-091150] INFO llm.plan.options bytes=112
+[20260423-091150] INFO llm.plan.options BEGIN
+{"max_tokens":48,"max_attempts":1,"temperature":0.05,"retry_temperature":0.1,"top_p":0.9,"top_k":24,"seed":1337}
+[20260423-091150] INFO llm.plan.options END
+[20260423-091206] INFO llm.plan.response.raw bytes=53
+[20260423-091206] INFO llm.plan.response.raw BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091206] INFO llm.plan.response.raw END
+[20260423-091206] INFO llm.plan.response.clean bytes=53
+[20260423-091206] INFO llm.plan.response.clean BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091206] INFO llm.plan.response.clean END
+[20260423-091206] INFO llm.plan.parsed bytes=301
+[20260423-091206] INFO llm.plan.parsed BEGIN
+{"accepted":false,"fallback_used":false,"current_state":"ACh","authoring_mode":"explore","next_state":"ACh","confidence":0,"insufficient_context":false,"rationale":"fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"}
+[20260423-091206] INFO llm.plan.parsed END
+[20260423-091206] INFO plan response received raw_bytes=53 clean_bytes=53 packet_bytes=1130 elapsed_ms=15947
+[20260423-091206] WARN plan rejected iteration=2 reason=fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"}
+[20260423-091206] WARN using local fallback plan iteration=2
+[20260423-091206] INFO llm.write.packet bytes=929
+[20260423-091206] INFO llm.write.packet BEGIN
+{"task":{"kind":"body_node_write","goal":"write the next grounded section"},"approved_plan":{"current_state":"ACh","authoring_mode":"explore","next_state":"ACh","confidence":0.200,"rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"},"focus":{"node_id":"node-1-20260423-080811","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Engineering Design Simulation with ProGen2d. Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"operator_input":{"user_event":"Continue developing the topic."},"evidence":[],"constraints":{"max_title_words":8,"max_text_words":90,"allow_citations":false}}
+[20260423-091206] INFO llm.write.packet END
+[20260423-091206] INFO llm.write.prompt bytes=1190
+[20260423-091206] INFO llm.write.prompt BEGIN
+Return exactly one compact JSON object. Required keys: update_title, update_text, rationale. Keep update_title under 8 words and update_text under 90 words. Do not invent citations or sources. Write only the section text described by the approved plan.
+Packet: {"task":{"kind":"body_node_write","goal":"write the next grounded section"},"approved_plan":{"current_state":"ACh","authoring_mode":"explore","next_state":"ACh","confidence":0.200,"rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"},"focus":{"node_id":"node-1-20260423-080811","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Engineering Design Simulation with ProGen2d. Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"operator_input":{"user_event":"Continue developing the topic."},"evidence":[],"constraints":{"max_title_words":8,"max_text_words":90,"allow_citations":false}}
+[20260423-091206] INFO llm.write.prompt END
+[20260423-091206] INFO llm.write.options bytes=113
+[20260423-091206] INFO llm.write.options BEGIN
+{"max_tokens":128,"max_attempts":2,"temperature":0.1,"retry_temperature":0.2,"top_p":0.95,"top_k":40,"seed":2337}
+[20260423-091206] INFO llm.write.options END
+[20260423-091234] INFO llm.write.response.raw bytes=53
+[20260423-091234] INFO llm.write.response.raw BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091234] INFO llm.write.response.raw END
+[20260423-091234] INFO llm.write.response.clean bytes=53
+[20260423-091234] INFO llm.write.response.clean BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091234] INFO llm.write.response.clean END
+[20260423-091234] INFO llm.write.parsed bytes=446
+[20260423-091234] INFO llm.write.parsed BEGIN
+{"accepted":false,"current_state":"ACh","authoring_mode":"explore","next_state":"ACh","confidence":0.2,"insufficient_context":true,"update_title":"Next section","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback: missing or invalid update_title, update_text | raw={\"rationale\":\"fallback: model returned empty output\"}"}
+[20260423-091234] INFO llm.write.parsed END
+[20260423-091234] INFO write stage completed packet_bytes=929 raw_bytes=53 clean_bytes=53 elapsed_ms=27881
+[20260423-091234] WARN write rejected iteration=2 reason=fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"} | fallback: missing or invalid update_title, update_text | raw={"rationale":"fallback: model retu...
+[20260423-091234] WARN low-confidence decision confidence=0.20 iteration=2
+[20260423-091234] WARN decision flagged insufficient_context iteration=2
+[20260423-091234] WARN outcome feedback productive=no low_value=yes grounded=no plan_fallback=yes write_fallback=yes confidence=0.20 fallback_streak=1 productive_streak=0 mode_now=structure
+[20260423-091234] INFO node committed id=node-2-20260423-091234 reinforcement=0.005 chem=DA=0.79, 5HT=0.10, OXY=0.09, CORT=0.07, NE=0.82, GABA=0.02, ACh=0.95, END=0.24
+[20260423-091234] INFO step commit complete iteration=2 title=Next Section next_mode=explore next_state=ACh
+[20260423-091234] WARN knowledge processing skipped with no entries
+[20260423-091234] INFO post-step knowledge processing complete summary=No in-memory knowledge entries were available for KnowledgeNode processing.
+[20260423-091317] INFO run_step invoked event=Continue developing the topic.
+[20260423-091317] INFO step start iteration=3 mode=structure state=ACh event=Continue developing the topic.
+[20260423-091317] INFO step context prepared recent_events=2 evidence_entries=0
+[20260423-091317] INFO llm.plan.packet bytes=1197
+[20260423-091317] INFO llm.plan.packet BEGIN
+{"task":{"kind":"body_node_decision","goal":"choose the next grounded section update"},"state":{"topic":"Engineering Design Simulation with ProGen2d","iteration":3,"current_state":"ACh","next_state":"ACh","authoring_mode":"structure","chemistry":{"DA":0.811,"5HT":0.341,"OXY":0.275,"CORT":0.064,"NE":0.892,"GABA":0.000,"ACh":0.967,"END":0.254}},"focus":{"node_id":"node-2-20260423-091234","title":"Next Section","mode":"explore","state":"ACh","summary":"Conservatively continue from Conservatively continue from Engineering Design Simulation with ProGen2d. Event: Continue developing the to.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"recent_events":["Continue developing the topic.","Continue developing the topic."],"evidence":[],"constraints":{"allow_citations":false,"valid_states":["DA","5HT","OXY","CORT","NE","GABA","ACh","END"],"valid_modes":["explore","structure","connect","stress_test","stabilize","action","activate"]},"operator_input":{"user_event":"Continue developing the topic."}}
+[20260423-091317] INFO llm.plan.packet END
+[20260423-091317] INFO llm.plan.prompt bytes=1669
+[20260423-091317] INFO llm.plan.prompt BEGIN
+Return exactly one compact JSON object. Required keys: current_state, authoring_mode, next_state, rationale. Optional keys: confidence, used_evidence_ids, insufficient_context, conflicts_detected. Confidence must be a number from 0 to 1. used_evidence_ids and conflicts_detected must be arrays of strings. Use only provided evidence ids. Do not invent citations or sources. If context is insufficient, set insufficient_context=true and keep the plan conservative.
+Packet: {"task":{"kind":"body_node_decision","goal":"choose the next grounded section update"},"state":{"topic":"Engineering Design Simulation with ProGen2d","iteration":3,"current_state":"ACh","next_state":"ACh","authoring_mode":"structure","chemistry":{"DA":0.811,"5HT":0.341,"OXY":0.275,"CORT":0.064,"NE":0.892,"GABA":0.000,"ACh":0.967,"END":0.254}},"focus":{"node_id":"node-2-20260423-091234","title":"Next Section","mode":"explore","state":"ACh","summary":"Conservatively continue from Conservatively continue from Engineering Design Simulation with ProGen2d. Event: Continue developing the to.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"recent_events":["Continue developing the topic.","Continue developing the topic."],"evidence":[],"constraints":{"allow_citations":false,"valid_states":["DA","5HT","OXY","CORT","NE","GABA","ACh","END"],"valid_modes":["explore","structure","connect","stress_test","stabilize","action","activate"]},"operator_input":{"user_event":"Continue developing the topic."}}
+[20260423-091317] INFO llm.plan.prompt END
+[20260423-091317] INFO llm.plan.options bytes=112
+[20260423-091317] INFO llm.plan.options BEGIN
+{"max_tokens":48,"max_attempts":1,"temperature":0.05,"retry_temperature":0.1,"top_p":0.9,"top_k":24,"seed":1337}
+[20260423-091317] INFO llm.plan.options END
+[20260423-091333] INFO llm.plan.response.raw bytes=53
+[20260423-091333] INFO llm.plan.response.raw BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091333] INFO llm.plan.response.raw END
+[20260423-091333] INFO llm.plan.response.clean bytes=53
+[20260423-091333] INFO llm.plan.response.clean BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091333] INFO llm.plan.response.clean END
+[20260423-091333] INFO llm.plan.parsed bytes=303
+[20260423-091333] INFO llm.plan.parsed BEGIN
+{"accepted":false,"fallback_used":false,"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0,"insufficient_context":false,"rationale":"fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"}
+[20260423-091333] INFO llm.plan.parsed END
+[20260423-091333] INFO plan response received raw_bytes=53 clean_bytes=53 packet_bytes=1197 elapsed_ms=15794
+[20260423-091333] WARN plan rejected iteration=3 reason=fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"}
+[20260423-091333] WARN using local fallback plan iteration=3
+[20260423-091333] INFO llm.write.packet bytes=996
+[20260423-091333] INFO llm.write.packet BEGIN
+{"task":{"kind":"body_node_write","goal":"write the next grounded section"},"approved_plan":{"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0.200,"rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"},"focus":{"node_id":"node-2-20260423-091234","title":"Next Section","mode":"explore","state":"ACh","summary":"Conservatively continue from Conservatively continue from Engineering Design Simulation with ProGen2d. Event: Continue developing the to.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"operator_input":{"user_event":"Continue developing the topic."},"evidence":[],"constraints":{"max_title_words":8,"max_text_words":90,"allow_citations":false}}
+[20260423-091333] INFO llm.write.packet END
+[20260423-091333] INFO llm.write.prompt bytes=1257
+[20260423-091333] INFO llm.write.prompt BEGIN
+Return exactly one compact JSON object. Required keys: update_title, update_text, rationale. Keep update_title under 8 words and update_text under 90 words. Do not invent citations or sources. Write only the section text described by the approved plan.
+Packet: {"task":{"kind":"body_node_write","goal":"write the next grounded section"},"approved_plan":{"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0.200,"rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"},"focus":{"node_id":"node-2-20260423-091234","title":"Next Section","mode":"explore","state":"ACh","summary":"Conservatively continue from Conservatively continue from Engineering Design Simulation with ProGen2d. Event: Continue developing the to.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"operator_input":{"user_event":"Continue developing the topic."},"evidence":[],"constraints":{"max_title_words":8,"max_text_words":90,"allow_citations":false}}
+[20260423-091333] INFO llm.write.prompt END
+[20260423-091333] INFO llm.write.options bytes=113
+[20260423-091333] INFO llm.write.options BEGIN
+{"max_tokens":128,"max_attempts":2,"temperature":0.1,"retry_temperature":0.2,"top_p":0.95,"top_k":40,"seed":2337}
+[20260423-091333] INFO llm.write.options END
+[20260423-091402] INFO llm.write.response.raw bytes=53
+[20260423-091402] INFO llm.write.response.raw BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091402] INFO llm.write.response.raw END
+[20260423-091402] INFO llm.write.response.clean bytes=53
+[20260423-091402] INFO llm.write.response.clean BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091402] INFO llm.write.response.clean END
+[20260423-091402] INFO llm.write.parsed bytes=448
+[20260423-091402] INFO llm.write.parsed BEGIN
+{"accepted":false,"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0.2,"insufficient_context":true,"update_title":"Next section","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback: missing or invalid update_title, update_text | raw={\"rationale\":\"fallback: model returned empty output\"}"}
+[20260423-091402] INFO llm.write.parsed END
+[20260423-091402] INFO write stage completed packet_bytes=996 raw_bytes=53 clean_bytes=53 elapsed_ms=28643
+[20260423-091402] WARN write rejected iteration=3 reason=fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"} | fallback: missing or invalid update_title, update_text | raw={"rationale":"fallback: model retu...
+[20260423-091402] WARN low-confidence decision confidence=0.20 iteration=3
+[20260423-091402] WARN decision flagged insufficient_context iteration=3
+[20260423-091402] WARN outcome feedback productive=no low_value=yes grounded=no plan_fallback=yes write_fallback=yes confidence=0.20 fallback_streak=2 productive_streak=0 mode_now=structure
+[20260423-091402] INFO node committed id=node-3-20260423-091402 reinforcement=0.005 chem=DA=0.78, 5HT=0.36, OXY=0.26, CORT=0.09, NE=0.86, GABA=0.03, ACh=0.95, END=0.24
+[20260423-091402] INFO step commit complete iteration=3 title=Next Section next_mode=structure next_state=ACh
+[20260423-091402] WARN knowledge processing skipped with no entries
+[20260423-091402] INFO post-step knowledge processing complete summary=No in-memory knowledge entries were available for KnowledgeNode processing.
+[20260423-091549] INFO run_step invoked event=Continue developing the topic.
+[20260423-091549] INFO step start iteration=4 mode=structure state=ACh event=Continue developing the topic.
+[20260423-091549] INFO step context prepared recent_events=2 evidence_entries=0
+[20260423-091549] INFO llm.plan.packet bytes=1199
+[20260423-091549] INFO llm.plan.packet BEGIN
+{"task":{"kind":"body_node_decision","goal":"choose the next grounded section update"},"state":{"topic":"Engineering Design Simulation with ProGen2d","iteration":4,"current_state":"ACh","next_state":"ACh","authoring_mode":"structure","chemistry":{"DA":0.811,"5HT":0.094,"OXY":0.101,"CORT":0.044,"NE":0.901,"GABA":0.000,"ACh":0.967,"END":0.284}},"focus":{"node_id":"node-3-20260423-091402","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Conservatively continue from Conservatively continue from Engineering Design Simulation with ProGen2d. Even.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"recent_events":["Continue developing the topic.","Continue developing the topic."],"evidence":[],"constraints":{"allow_citations":false,"valid_states":["DA","5HT","OXY","CORT","NE","GABA","ACh","END"],"valid_modes":["explore","structure","connect","stress_test","stabilize","action","activate"]},"operator_input":{"user_event":"Continue developing the topic."}}
+[20260423-091549] INFO llm.plan.packet END
+[20260423-091549] INFO llm.plan.prompt bytes=1671
+[20260423-091549] INFO llm.plan.prompt BEGIN
+Return exactly one compact JSON object. Required keys: current_state, authoring_mode, next_state, rationale. Optional keys: confidence, used_evidence_ids, insufficient_context, conflicts_detected. Confidence must be a number from 0 to 1. used_evidence_ids and conflicts_detected must be arrays of strings. Use only provided evidence ids. Do not invent citations or sources. If context is insufficient, set insufficient_context=true and keep the plan conservative.
+Packet: {"task":{"kind":"body_node_decision","goal":"choose the next grounded section update"},"state":{"topic":"Engineering Design Simulation with ProGen2d","iteration":4,"current_state":"ACh","next_state":"ACh","authoring_mode":"structure","chemistry":{"DA":0.811,"5HT":0.094,"OXY":0.101,"CORT":0.044,"NE":0.901,"GABA":0.000,"ACh":0.967,"END":0.284}},"focus":{"node_id":"node-3-20260423-091402","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Conservatively continue from Conservatively continue from Engineering Design Simulation with ProGen2d. Even.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"recent_events":["Continue developing the topic.","Continue developing the topic."],"evidence":[],"constraints":{"allow_citations":false,"valid_states":["DA","5HT","OXY","CORT","NE","GABA","ACh","END"],"valid_modes":["explore","structure","connect","stress_test","stabilize","action","activate"]},"operator_input":{"user_event":"Continue developing the topic."}}
+[20260423-091549] INFO llm.plan.prompt END
+[20260423-091549] INFO llm.plan.options bytes=112
+[20260423-091549] INFO llm.plan.options BEGIN
+{"max_tokens":48,"max_attempts":1,"temperature":0.05,"retry_temperature":0.1,"top_p":0.9,"top_k":24,"seed":1337}
+[20260423-091549] INFO llm.plan.options END
+[20260423-091604] INFO llm.plan.response.raw bytes=53
+[20260423-091604] INFO llm.plan.response.raw BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091604] INFO llm.plan.response.raw END
+[20260423-091604] INFO llm.plan.response.clean bytes=53
+[20260423-091604] INFO llm.plan.response.clean BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091604] INFO llm.plan.response.clean END
+[20260423-091604] INFO llm.plan.parsed bytes=303
+[20260423-091604] INFO llm.plan.parsed BEGIN
+{"accepted":false,"fallback_used":false,"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0,"insufficient_context":false,"rationale":"fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"}
+[20260423-091604] INFO llm.plan.parsed END
+[20260423-091604] INFO plan response received raw_bytes=53 clean_bytes=53 packet_bytes=1199 elapsed_ms=15650
+[20260423-091604] WARN plan rejected iteration=4 reason=fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"}
+[20260423-091604] WARN using local fallback plan iteration=4
+[20260423-091604] INFO llm.write.packet bytes=998
+[20260423-091604] INFO llm.write.packet BEGIN
+{"task":{"kind":"body_node_write","goal":"write the next grounded section"},"approved_plan":{"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0.200,"rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"},"focus":{"node_id":"node-3-20260423-091402","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Conservatively continue from Conservatively continue from Engineering Design Simulation with ProGen2d. Even.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"operator_input":{"user_event":"Continue developing the topic."},"evidence":[],"constraints":{"max_title_words":8,"max_text_words":90,"allow_citations":false}}
+[20260423-091604] INFO llm.write.packet END
+[20260423-091604] INFO llm.write.prompt bytes=1259
+[20260423-091604] INFO llm.write.prompt BEGIN
+Return exactly one compact JSON object. Required keys: update_title, update_text, rationale. Keep update_title under 8 words and update_text under 90 words. Do not invent citations or sources. Write only the section text described by the approved plan.
+Packet: {"task":{"kind":"body_node_write","goal":"write the next grounded section"},"approved_plan":{"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0.200,"rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"},"focus":{"node_id":"node-3-20260423-091402","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Conservatively continue from Conservatively continue from Engineering Design Simulation with ProGen2d. Even.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"operator_input":{"user_event":"Continue developing the topic."},"evidence":[],"constraints":{"max_title_words":8,"max_text_words":90,"allow_citations":false}}
+[20260423-091604] INFO llm.write.prompt END
+[20260423-091604] INFO llm.write.options bytes=113
+[20260423-091604] INFO llm.write.options BEGIN
+{"max_tokens":128,"max_attempts":2,"temperature":0.1,"retry_temperature":0.2,"top_p":0.95,"top_k":40,"seed":2337}
+[20260423-091604] INFO llm.write.options END
+[20260423-091632] INFO llm.write.response.raw bytes=53
+[20260423-091632] INFO llm.write.response.raw BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091632] INFO llm.write.response.raw END
+[20260423-091632] INFO llm.write.response.clean bytes=53
+[20260423-091632] INFO llm.write.response.clean BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-091632] INFO llm.write.response.clean END
+[20260423-091632] INFO llm.write.parsed bytes=448
+[20260423-091632] INFO llm.write.parsed BEGIN
+{"accepted":false,"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0.2,"insufficient_context":true,"update_title":"Next section","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback: missing or invalid update_title, update_text | raw={\"rationale\":\"fallback: model returned empty output\"}"}
+[20260423-091632] INFO llm.write.parsed END
+[20260423-091632] INFO write stage completed packet_bytes=998 raw_bytes=53 clean_bytes=53 elapsed_ms=27808
+[20260423-091632] WARN write rejected iteration=4 reason=fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"} | fallback: missing or invalid update_title, update_text | raw={"rationale":"fallback: model retu...
+[20260423-091632] WARN low-confidence decision confidence=0.20 iteration=4
+[20260423-091632] WARN decision flagged insufficient_context iteration=4
+[20260423-091632] WARN outcome feedback productive=no low_value=yes grounded=no plan_fallback=yes write_fallback=yes confidence=0.20 fallback_streak=3 productive_streak=0 mode_now=structure
+[20260423-091632] INFO node committed id=node-4-20260423-091632 reinforcement=0.005 chem=DA=0.78, 5HT=0.12, OXY=0.09, CORT=0.08, NE=0.86, GABA=0.03, ACh=0.95, END=0.26
+[20260423-091632] INFO step commit complete iteration=4 title=Next Section next_mode=structure next_state=ACh
+[20260423-091632] WARN knowledge processing skipped with no entries
+[20260423-091632] INFO post-step knowledge processing complete summary=No in-memory knowledge entries were available for KnowledgeNode processing.
+[20260423-092637] INFO state saved to neuro_state.bin
+[20260423-092637] INFO markdown exported with prefix body-of-work
+[20260423-093230] INFO runtime log initialized file=neuro_runtime.log
+[20260423-093230] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-093230] INFO state loaded from neuro_state.bin
+[20260423-093230] INFO knowledge context rebuilt after load
+[20260423-093230] INFO initial knowledge processing requested
+[20260423-093230] WARN knowledge processing skipped with no entries
+[20260423-093249] INFO run_step invoked event=Continue developing the topic.
+[20260423-093249] INFO step start iteration=5 mode=structure state=ACh event=Continue developing the topic.
+[20260423-093249] INFO step context prepared recent_events=2 evidence_entries=0
+[20260423-093249] INFO llm.plan.packet bytes=1199
+[20260423-093249] INFO llm.plan.packet BEGIN
+{"task":{"kind":"body_node_decision","goal":"choose the next grounded section update"},"state":{"topic":"Engineering Design Simulation with ProGen2d","iteration":5,"current_state":"ACh","next_state":"ACh","authoring_mode":"structure","chemistry":{"DA":0.810,"5HT":0.341,"OXY":0.277,"CORT":0.063,"NE":0.892,"GABA":0.000,"ACh":0.967,"END":0.194}},"focus":{"node_id":"node-4-20260423-091632","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Conservatively continue from Conservatively continue from Conservatively continue from Engineering Design S.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"recent_events":["Continue developing the topic.","Continue developing the topic."],"evidence":[],"constraints":{"allow_citations":false,"valid_states":["DA","5HT","OXY","CORT","NE","GABA","ACh","END"],"valid_modes":["explore","structure","connect","stress_test","stabilize","action","activate"]},"operator_input":{"user_event":"Continue developing the topic."}}
+[20260423-093249] INFO llm.plan.packet END
+[20260423-093249] INFO llm.plan.prompt bytes=1671
+[20260423-093249] INFO llm.plan.prompt BEGIN
+Return exactly one compact JSON object. Required keys: current_state, authoring_mode, next_state, rationale. Optional keys: confidence, used_evidence_ids, insufficient_context, conflicts_detected. Confidence must be a number from 0 to 1. used_evidence_ids and conflicts_detected must be arrays of strings. Use only provided evidence ids. Do not invent citations or sources. If context is insufficient, set insufficient_context=true and keep the plan conservative.
+Packet: {"task":{"kind":"body_node_decision","goal":"choose the next grounded section update"},"state":{"topic":"Engineering Design Simulation with ProGen2d","iteration":5,"current_state":"ACh","next_state":"ACh","authoring_mode":"structure","chemistry":{"DA":0.810,"5HT":0.341,"OXY":0.277,"CORT":0.063,"NE":0.892,"GABA":0.000,"ACh":0.967,"END":0.194}},"focus":{"node_id":"node-4-20260423-091632","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Conservatively continue from Conservatively continue from Conservatively continue from Engineering Design S.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"recent_events":["Continue developing the topic.","Continue developing the topic."],"evidence":[],"constraints":{"allow_citations":false,"valid_states":["DA","5HT","OXY","CORT","NE","GABA","ACh","END"],"valid_modes":["explore","structure","connect","stress_test","stabilize","action","activate"]},"operator_input":{"user_event":"Continue developing the topic."}}
+[20260423-093249] INFO llm.plan.prompt END
+[20260423-093249] INFO llm.plan.options bytes=134
+[20260423-093249] INFO llm.plan.options BEGIN
+{"max_tokens":32,"max_attempts":1,"temperature":0.05,"retry_temperature":0.1,"top_p":0.9,"top_k":24,"seed":1337,"max_elapsed_ms":2500}
+[20260423-093249] INFO llm.plan.options END
+[20260423-093457] INFO llm.plan.metrics bytes=173
+[20260423-093457] INFO llm.plan.metrics BEGIN
+{"attempts_used":1,"prompt_tokens":464,"output_tokens":0,"tokenize_ms":179,"context_reset_ms":198,"decode_ms":127033,"first_token_ms":-1,"total_ms":127410,"timed_out":false}
+[20260423-093457] INFO llm.plan.metrics END
+[20260423-093457] INFO llm.plan.response.raw bytes=53
+[20260423-093457] INFO llm.plan.response.raw BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-093457] INFO llm.plan.response.raw END
+[20260423-093457] INFO llm.plan.response.clean bytes=53
+[20260423-093457] INFO llm.plan.response.clean BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-093457] INFO llm.plan.response.clean END
+[20260423-093457] INFO llm.plan.parsed bytes=303
+[20260423-093457] INFO llm.plan.parsed BEGIN
+{"accepted":false,"fallback_used":false,"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0,"insufficient_context":false,"rationale":"fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"}
+[20260423-093457] INFO llm.plan.parsed END
+[20260423-093457] INFO plan response received raw_bytes=53 clean_bytes=53 packet_bytes=1199 elapsed_ms=127424
+[20260423-093457] WARN plan rejected iteration=5 reason=fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"}
+[20260423-093457] WARN using local fallback plan iteration=5
+[20260423-093457] INFO llm.write.packet bytes=998
+[20260423-093457] INFO llm.write.packet BEGIN
+{"task":{"kind":"body_node_write","goal":"write the next grounded section"},"approved_plan":{"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0.200,"rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"},"focus":{"node_id":"node-4-20260423-091632","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Conservatively continue from Conservatively continue from Conservatively continue from Engineering Design S.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"operator_input":{"user_event":"Continue developing the topic."},"evidence":[],"constraints":{"max_title_words":8,"max_text_words":90,"allow_citations":false}}
+[20260423-093457] INFO llm.write.packet END
+[20260423-093457] INFO llm.write.prompt bytes=1259
+[20260423-093457] INFO llm.write.prompt BEGIN
+Return exactly one compact JSON object. Required keys: update_title, update_text, rationale. Keep update_title under 8 words and update_text under 90 words. Do not invent citations or sources. Write only the section text described by the approved plan.
+Packet: {"task":{"kind":"body_node_write","goal":"write the next grounded section"},"approved_plan":{"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0.200,"rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"}"},"focus":{"node_id":"node-4-20260423-091632","title":"Next Section","mode":"structure","state":"ACh","summary":"Conservatively continue from Conservatively continue from Conservatively continue from Conservatively continue from Engineering Design S.... Event: Continue developing the topic..","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback write: fallback plan..."},"operator_input":{"user_event":"Continue developing the topic."},"evidence":[],"constraints":{"max_title_words":8,"max_text_words":90,"allow_citations":false}}
+[20260423-093457] INFO llm.write.prompt END
+[20260423-093457] INFO llm.write.options bytes=135
+[20260423-093457] INFO llm.write.options BEGIN
+{"max_tokens":64,"max_attempts":1,"temperature":0.08,"retry_temperature":0.12,"top_p":0.9,"top_k":24,"seed":2337,"max_elapsed_ms":6000}
+[20260423-093457] INFO llm.write.options END
+[20260423-093625] INFO llm.write.metrics bytes=171
+[20260423-093625] INFO llm.write.metrics BEGIN
+{"attempts_used":1,"prompt_tokens":330,"output_tokens":0,"tokenize_ms":212,"context_reset_ms":246,"decode_ms":87377,"first_token_ms":-1,"total_ms":87836,"timed_out":false}
+[20260423-093625] INFO llm.write.metrics END
+[20260423-093625] INFO llm.write.response.raw bytes=53
+[20260423-093625] INFO llm.write.response.raw BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-093625] INFO llm.write.response.raw END
+[20260423-093625] INFO llm.write.response.clean bytes=53
+[20260423-093625] INFO llm.write.response.clean BEGIN
+{"rationale":"fallback: model returned empty output"}
+[20260423-093625] INFO llm.write.response.clean END
+[20260423-093625] INFO llm.write.parsed bytes=448
+[20260423-093625] INFO llm.write.parsed BEGIN
+{"accepted":false,"current_state":"ACh","authoring_mode":"structure","next_state":"ACh","confidence":0.2,"insufficient_context":true,"update_title":"Next section","rationale":"fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={\"rationale\":\"fallback: model returned empty output\"} | fallback: missing or invalid update_title, update_text | raw={\"rationale\":\"fallback: model returned empty output\"}"}
+[20260423-093625] INFO llm.write.parsed END
+[20260423-093625] INFO write stage completed packet_bytes=998 raw_bytes=53 clean_bytes=53 elapsed_ms=87861
+[20260423-093625] WARN write rejected iteration=5 reason=fallback plan: fallback: missing or invalid current_state, authoring_mode, next_state | raw={"rationale":"fallback: model returned empty output"} | fallback: missing or invalid update_title, update_text | raw={"rationale":"fallback: model retu...
+[20260423-093625] WARN low-confidence decision confidence=0.20 iteration=5
+[20260423-093625] WARN decision flagged insufficient_context iteration=5
+[20260423-093625] WARN outcome feedback productive=no low_value=yes grounded=no plan_fallback=yes write_fallback=yes confidence=0.20 fallback_streak=4 productive_streak=0 mode_now=structure
+[20260423-093625] INFO node committed id=node-5-20260423-093625 reinforcement=0.005 chem=DA=0.77, 5HT=0.37, OXY=0.26, CORT=0.10, NE=0.86, GABA=0.04, ACh=0.95, END=0.17
+[20260423-093625] INFO step commit complete iteration=5 title=Next Section next_mode=structure next_state=ACh
+[20260423-093625] WARN knowledge processing skipped with no entries
+[20260423-093625] INFO post-step knowledge processing complete summary=No in-memory knowledge entries were available for KnowledgeNode processing.
+[20260423-100040] INFO runtime log initialized file=neuro_runtime.log
+[20260423-100040] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-100040] INFO runtime self-test started iterations=1
+[20260423-100757] INFO runtime log initialized file=neuro_runtime.log
+[20260423-100757] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-100757] INFO runtime self-test started iterations=1
+[20260423-101024] INFO runtime log initialized file=neuro_runtime.log
+[20260423-101024] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-101024] INFO runtime self-test started iterations=1
+[20260423-101352] INFO runtime log initialized file=neuro_runtime.log
+[20260423-101352] INFO llm pipeline mode=staged plan_write_with_fallback
+[20260423-101352] INFO runtime self-test started iterations=1
+[20260423-101804] INFO runtime log initialized file=neuro_runtime.log
+[20260423-101804] INFO llm pipeline mode=staged plan_write_with_fallback compact_json=yes
+[20260423-101804] INFO runtime self-test started iterations=1
+[20260423-102246] INFO runtime log initialized file=neuro_runtime.log
+[20260423-102246] INFO llm pipeline mode=staged plan_write_with_fallback compact_json=yes
+[20260423-102246] INFO runtime self-test started iterations=1
