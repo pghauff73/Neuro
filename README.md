@@ -41,7 +41,7 @@ Interactive commands:
 ```text
 /step <text>                         add an event and run one LLM iteration
 /tick <secs>                         advance chemistry without an LLM call
-/knowledge-add <title>|<url>|<text>  add an in-memory knowledge entry
+/knowledge-add <title>|<url>|<summary>|<text>  add an in-memory knowledge entry
 /knowledge [modes]                   process in-memory KnowledgeNode modes
 /show                                print current engine state
 /save                                write body-of-work.md
