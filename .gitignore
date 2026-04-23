@@ -1,0 +1,30 @@
+# Build outputs
+neuro_llama
+*.o
+*.obj
+*.so
+*.a
+*.dylib
+*.dll
+
+# Local runtime state
+*.bin
+body-of-work.md
+
+# Local models
+*.gguf
+*.ggml
+models/
+
+# CMake and dependency build trees
+build/
+cmake-build-*/
+llama.cpp/build/
+imgui-master/build/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.codex
